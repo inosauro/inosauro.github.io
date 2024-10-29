@@ -19,45 +19,17 @@
         function showCoord(event){
             console.log(event.clientX+':'+event.clientY);
         }
-        zombie.style.top=event.clientX+'px';
-        let zombie = document.createElement('img');
-        zombie.src='8e0efda17a2efd19d6a818eb5efafdbe.gif';
-        document.body.append(zombie);
-
-        let left = 100;
-        let step=1;
-
-        zombie.style.position='fixed';
-        zombie.style.top='100px';
-        zombie.style.left= left+'px';
         
-        function moveZombie(){
-            left = left+step;
-
-            if (left > 1000){
-                step = step*(-1);
-                zombie.style.transform = 'rotateY(180deg)';
-            }
-
-            if(left < 0){
-                step=step*(-1);
-                zombie.style.transform = 'rotateY(0)';
-            }
-
-            zombie.style.left= left+'px';
-        }
-        setInterval(moveZombie, 1);
-
         function createZombie(event){
             let zombie = document.createElement('img');
         zombie.src='8e0efda17a2efd19d6a818eb5efafdbe.gif';
         document.body.append(zombie);
 
-        let left = 100;
+        let left =  event.clientX;
         let step=1;
 
         zombie.style.position='fixed';
-        zombie.style.top='100px';
+        zombie.style.top= event.clientY+'px';
         zombie.style.left= left+'px';
         
         function moveZombie(){
