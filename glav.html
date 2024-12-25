@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/glav.css">
+    <title>Центральный Музей Военно-воздушных сил</title>
+    <link rel="shortext icon" href="logo.png" type="png">
+</head>
+<body>  
+    <section class="win">
+    <div id="mod-custom113" class="mo-customcustom">
+        <p> Добро пожаловать в Центральный музей Военно-воздушных сил !</p>
+        <button>Купить билет</button>
+        <ul class="social-list">
+        <a href="https://vk.com/cmvvs_official"><img src="icons8-вконтакте-48.png"></a>
+        <a href="https://ok.ru/group/62271872434275"><img src="icons8-одноклассники-48.png"></a>
+        <a href="https://t.me/cmvvs_official"><img src="icons8-телеграмма-48.png"></a>
+        <a href="https://www.tripadvisor.ru/Attraction_Review-g2396622-d2277081-Reviews-The_Central_Air_Force_Museum-Monino_Shchelkovsky_District_Moscow_Oblast_Central_.html"><img src="icons8-tripadvisor-48.png"></a>
+    </ul></div> 
+    <div id="mod-custom114" class="mod-customcustom">
+        <img src="logo.png" class="logo">
+        <ul class="address-list">
+            <label>Приёмная</label><p class="ran">+7(496)250-1189</p>
+            <label>Заказ экскурсий (ср. - вс.)</label><p class="rin">+7 (495) 786-4412</p>
+            <iframe src="./Центральный музей ВВС - ЦМ ВВС_files/1043220919.html" width="150" height="80" frameborder="0"></iframe>
+        </li>
+    </ul></div>
+    <header>
+        <nav>
+            <a href="glav.html">Музей</a>
+            <a href="posit.html">Посетителям</a>
+            <a href="poset.html">Экспозиция</a>
+            <a href="onlik.html">Онлайн - гид</a>
+        </nav>
+    </header>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="sshow_401.jpg" alt="Слайд 1">
+        </div>
+        <div class="mySlides">
+            <img src="sshow_402.jpg" alt="Слайд 2">
+        </div>
+        <div class="mySlides">
+            <img src="sshow_403.jpg" alt="Слайд 3">
+        </div>
+        <div class="mySlides">
+            <img src="sshow_404.jpg" alt="Слайд 3">
+        </div>
+        <div class="mySlides">
+            <img src="sshow_406.jpg" alt="Слайд 3">
+    </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        function startSlideshow(slides, interval) {
+  let currentSlide = 0;
+  setInterval(() => {
+    slides[currentSlide].style.display = "none";
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].style.display = "block";
+  }, interval);
+}
+const slides = document.querySelectorAll(".mySlides");
+startSlideshow(slides, 3000);
+    </script>
+
+<div class="nower">
+    <a class="cyc" href="posit.html">
+        <button>БИЛЕТЫ И РЕЖИМ РАБОТЫ</button>
+      </a>
+</div>
+</section>
+<section class="myo">
+    <div class="tut">
+<h4>МУЗЕЙ. ЗАЛЫ И АНГАРЫ</h4>
+<h2>10280 кв.метров экспозиций. 2 ангара общей площадью 5200 кв. метров. Открытая площадка площадью 18 гектар</h2>
+<p>В фондах хранится 34 894 музейных предмета. Подлинные образцы летательных аппаратов различных типов, авиационные двигатели, вооружение, уникальные фото и редкие документы.</p>
+    </div>
+    <div class="box">
+        <div class="content">
+            <img src="hall01_01.jpg" class="foto">
+            <h3>Зал 1. Зарождение и развитие авиации в России</h3>
+            <h4>Этот зал открывает экспозицию музея. Он посвящён историческим корням отечественного воздухоплавания и авиации, демонстрирует работы отечественных ученых, конструкторов и изобретателей в области создания летательных машин, рассказывает об интересных результатах, которых они добились.</h4>
+        </div>
+            <div class="content">
+                <img src="hall02_01.jpg" class="foto">
+                <h3>Зал 2. ВВС в годы мирового строительства 1922-1941 г.г.</h3>
+                <h4>Экспозиция зала расскажет о первых шагах советской авиации. Здесь представлены экспонаты от момента образования СССР до начала Великой Отечественной войны. Собрана уникальная коллекция авиационных двигателей и моделей самолетов этого периода.</h4>
+            </div>
+            <div class="content">
+            <img src="hall06a_01.jpg" class="foto">
+            <h3>Зал 6А и 6Б. ВВС в годы Великой Отечественной войны</h3>
+            <h4>Экспозиция этих залов посвящена авиации Советского Союза в годы Великой Отечественной войны. Вы увидите боевые самолеты, на которых наши лётчики вступили в войну и которые поставляла авиационная промышленность в тяжелое военное время.</h4>
+        </div>
+        <div class="content">
+            <img src="hall08_03.jpg" class="foto">
+             <h3>Зал-ангар 8. Уникальные летательные аппараты</h3>
+            <h4>В зале-ангаре 8 собраны образцы уникальных экспериментальных и исторических самолетов, планеров и других видов авиационной техники. Здесь размещены самолеты, участники Первой мировой и гражданской войн: «Илья Муромец», «Вуазен» и другие.</h4>
+            </div>
+            <div class="content">
+                <img src="зал.jpg" class="foto">
+                 <h3>Экспозиция «Воздушные винты»</h3>
+                <h4>История возникновения и развития воздушных винтов. Представленные экспонаты расскажут о первых исследованиях в области аэродинамики воздушного винта, о первых попытках его применения. Здесь вы сможете своими глазами увидеть уникальные экземпляры воздушных винтов применявшихся в авиации на протяжении всего ХХ века.</h4>
+                </div>
+                <div class="content">
+                    <img src="airfld_01.jpg" class="foto">
+                     <h3>Открытая стоянка. Современные летательные аппараты</h3>
+                    <h4>На открытой стоянке расположены летательные аппараты, созданные в ОКБ Туполева, Сухого, Микояна, Яковлева, Антонова, Ильюшина, Мясищева, Миля, Камова. Экспонируются 110 самолетов и вертолетов различных типов и модификаций, которые объединены в группы по разработавшим их конструкторским бюро.</h4>
+                    </div>
+                    <div class="content">
+                        <img src="hall05_02.jpg" class="foto">
+                         <h3>Зал 5. Форма одежды. От пилота-авиатора до космонавта</h3>
+                        <h4>Кто из нас не восхищался подвигами прославленных летчиков Нестерова, Чкалова, Покрышкина, Кожедуба, Гагарина и многих других, чьи портреты известны каждому россиянину.</h4>
+                        </div>
+    </div>
+</section>
+<section class="mussu">
+    <div class="container">
+        <img src="airfld_01.jpg" alt="Фон" class="background-image">
+        <div class="overlay">
+          <h6>МИССИЯ</h6>
+            <h2>"Наши цели: совершенствование существующих экспозиций ЦМ ВВС, создание новых форм экспонирования музейного фонда для формирования у посетителей корректного представления об истории развития Военно-воздушных сил страны"</h2>
+          <img src="zarubetsky.jpg" alt="Маленькая картинка">
+          <p>Зарубецкий Александр Михайлович
+        </p>
+        <h4>Начальник центрального музея ВВС</h4>
+        </div>
+      </div>
+</div>
+</section>
+<section class="syti">
+    <h2>Знаменательные даты</h2>
+<div class="gigant" id="blocku-gigant">
+<div class="bloku">
+<img src="r241.jpg" class="dyd">
+<h4>99 лет со дня первого полёта цельнометаллического бомбардировщика ТБ-1 (АНТ-4)</h4>
+<p>26.11.2024</p>
+</div>
+<div class="bloku">
+    <img src="db4-2.jpg" class="dyd">
+    <h4>Первый полёт ДБ-4, скоростного дальнего бомбардировщика</h4>
+    <p>15.10.2024</p>
+    </div>
+    <div class="bloku">
+        <img src="i15-11.jpg" class="dyd">
+        <h4>Cостоялся первый полёт И-15</h4>
+        <p>08.10.2024</p>
+    </div>
+    <div class="bloku">
+        <img src="sputnik_03.jpg" class="dyd">
+        <h4>Запущен на орбиту первый в мире искусственный спутник Земли</h4>
+        <p>04.10.2024</p>
+    </div>
+    <div class="bloku">
+        <img src="il-2_01.jpg" class="dyd">
+        <h4>Первый полёт ЦКБ-55</h4>
+        <p>02.10.2024</p>
+    </div>
+</div>
+</section>
+<footer>
+<div class="ter">
+    <p>Центральный музей
+    <p>Военно-воздушных сил,</p>
+    г.о. Щёлково, р.п. Монино, ул. Музейная, д.1</p>
+        <h3>Приёмная</h3>
+        <h4>+7 (496) 250-11 89</h4>
+        <h4 >info@cmvvs.ru</h4>
+        <h3>Заказ экскурсий (среда - воскресенье)</h3>
+        <h4>+7 (495) 786-44 12</h4>
+        <h4>tour@cmvvs.ru</h4>
+        <h3>Маркетинг (понедельник - пятница)</h3>
+        <h4>+7 (995) 785-1909</h4>
+        <h4>marketing@cmvvs.ru</h4>
+</div>
+<div class="tyr">
+    <h3>Головная организация:</h3>
+        <p>Федеральное государственное бюджетное учреждение культуры и искусства «Центральный музей Вооруженных Сил Российской Федерации» Министерства обороны Российской Федерации</p>
+        <h3>ИНН 7702071990</h3>
+        <div class="tir">
+        <a href="https://www.culture.ru/institutes/56239/centralnyi-muzei-voenno-vozdushnykh-sil"><img src="culture-logo-1.png"></a>
+            <div>
+        <a href="https://goskatalog.ru/portal/#/collections?museumIds=2939"><img src="goskatalog_logo.png"></a>
+            </div>
+        </div>
+</div>
+<div class="tyu">
+    <p>РЕЖИМ РАБОТЫ МУЗЕЯ:</p>
+    <p>Закрытая экспозиция:
+            <p>среда - воскресенье - с 9:00 до 17:45</p></p>
+    <p>Открытая площадка:
+                <p>среда - воскресенье - с 10:00 до 18:45</p></p>
+    <p>ВЫХОДНЫЕ ДНИ:</p>
+    <p class="twe">Понедельник, вторник</p>
+</div>
+</footer>
+</body>
+</html>
